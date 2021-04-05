@@ -5,7 +5,11 @@ class CustomInput extends React.Component {
     render() {
         return (
             <div>
-                <input type={this.props.type} name="" id="" placeholder={this.props.place} />
+                <input
+                    type="text"
+                    value={this.props.value}
+                    readOnly
+                />
             </div>
         )
     }
